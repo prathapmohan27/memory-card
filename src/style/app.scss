@@ -13,14 +13,14 @@ p {
 
 body {
   font-family: onePiece-regular;
-  background-color: #575777;
+  background-color: #0d3049;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #a5a535;
+  background-image: linear-gradient(#4799e9, #65f4cd);
   img {
     width: 18rem;
     height: auto;
@@ -45,15 +45,17 @@ header {
 .board {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 1fr, 1fr;
-  gap: 0.5rem;
+  gap: 1.5rem;
   margin: 1rem;
+  width: 90%;
+  margin: 0 auto 0 auto;
   .card {
-    // border: 0.2rem solid #707096;
     height: 22.8rem;
     cursor: pointer;
     border-radius: 1rem;
+    border: 2px solid black;
     overflow: hidden;
+    box-shadow: 0px 0px 1rem rgb(0, 0, 0);
   }
   img {
     width: 100%;
@@ -61,6 +63,27 @@ header {
   }
 }
 
-.card:hover {
-  box-shadow: 0 0 0.5rem 0.5rem #9a9ab5;
+@media screen and (max-width: 30rem) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 90%;
+    position: fixed;
+    flex-direction: column;
+    img {
+      width: 15rem;
+    }
+    div {
+      display: flex;
+    }
+  }
+  .info {
+    margin-top: 10rem;
+  }
+  .board {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
 }

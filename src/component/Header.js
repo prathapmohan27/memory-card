@@ -1,11 +1,11 @@
 import React from 'react';
 import Score from './Score';
 import logo from '../assets/logo.png';
-function Header() {
+function Header(props) {
   return (
     <header>
       <img src={logo} alt="luffy" />
-      <Score />
+      <Score scores={props} />
     </header>
   );
 }

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.6f899942.css",
+    "main.js": "/memory-card/static/js/main.99d91137.js",
+    "static/media/logo.png": "/memory-card/static/media/logo.0c984d0d2114b1f5c90a.png",
+    "static/media/onePiece-font.ttf": "/memory-card/static/media/onePiece-font.951ce8e89b9138e6d37a.ttf",
+    "index.html": "/memory-card/index.html",
+    "main.6f899942.css.map": "/memory-card/static/css/main.6f899942.css.map",
+    "main.99d91137.js.map": "/memory-card/static/js/main.99d91137.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f899942.css",
+    "static/js/main.99d91137.js"
+  ]
+}
